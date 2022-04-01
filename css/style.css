@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url(../Fonts/SourceSansPro-Bold.otf);
+@import url(../Fonts/SourceSansPro-BoldIt.otf);
+@import url(../Fonts/SourceSansPro-It.otf);
+@import url(../Fonts/SourceSansPro-Regular.otf);
+h2,h5{
+    font-weight: bold;
+    color: #333333;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.bg-light{
+    background-color: white !important;
+}
+.nav-link{
+    font-weight: bolder;
+    font-size: larger;
+}
+.carousel img{
+    height: 500px;
+}
