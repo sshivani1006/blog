@@ -24,3 +24,18 @@ body{
 .carousel img{
     height: 500px;
 }
+
+.category h3{
+    text-align: center;
+    color: gold;
+}
+
+footer{
+    background-color: black;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    color:goldenrod;
+    height: 50px;
+}
+
