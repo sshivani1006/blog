@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGZONE</title>
+    <link rel="stylesheet" type="text/css" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" 
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" 
+    integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container box-shadow">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="./assets/img/logobg.png" style="width: 200px; height: 80px;" alt="company logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="createBlog.html">Create a Blog</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control" type="text" placeholder="Search.." name="search2">
+                <button class="btn btn-light" type="submit"><i class="fa fa-search"></i></button>
+                <a class="btn btn-success my-2 my-sm-0 ml-5" href="login.html">Login</a>
+              </form>
+            </div>
+        </nav>
+    </div>
+    
+        <div class="container-fluid bpost  py-5">       
+                
+            <div class="create_post shadow p-5 mb-5 mt-3 bg-white rounded">
+                <h3>Write your Post</h3>
+                <form id="post_form">
+                    <div class="form-group">
+                        <label for="bid">Blog Id</label>
+                        <input type="text" class="form-control" id="bid">
+                        </div>
+                    <div class="form-group">
+                        <label for="bname">Blog Name</label>
+                        <input type="text" class="form-control" id="bname">
+                    </div>
+                    <div class="form-group">
+                        <label for="bcategory">Category</label>
+                        <select id="bcategory" class="form-control">
+                          <option selected>Choose...</option>
+                          <option value="travelling">Travelling</option>
+                          <option value="diet">Diet</option>
+                          <option value="technology">Technology</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea name="content" id="content" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="authemail">Posted By</label>
+                        <input type="email" class="form-control" id="authemail">
+                    </div>
+                    <div class="form-group">
+                        <label for="pdate">Posted On</label>
+                        <input type="datetime-local" class="form-control" id="pdate">
+                    </div>
+                    <div class="fbtn">
+                        <button type="submit" class="btn btn-lg">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+                        
+                    
+                
+        </div>
+    
+    <footer>
+      <p> ©2022 BLOGZONE. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
